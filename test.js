@@ -79,3 +79,19 @@ console.log(isEven(-1));
 // → ??
 console.log(isEven(-25));
 console.log(isEven(-36));
+
+//bean counting. This one was super easy
+
+function countBs(n, x) {
+  var total = 0;
+  for (var i = 0; i <=n.length; i++){
+    if (n.charAt(i) == x) {
+      total++;
+    };
+  };
+  return total;
+};
+
+console.log(countBs("Beep boop bop", "b"));
+
+
