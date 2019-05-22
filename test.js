@@ -121,3 +121,27 @@ function range (x, y, step) {
 
 console.log(range(1, 10, 2));
 
+//Reversing Arrays - still not done with part two, but saving for later.
+function reverseArray(arr){
+ let blank = []
+for (let i = arr.length -1; i >= 0; i--){
+blank.push(arr[i]);
+}
+return blank;
+};
+
+function reverseArrayInPlace(arr1){
+ let spliced = []
+  for (let b = 0; b <= arr1.length; b++) {
+  arr1.shift(arr1[b]);
+  arr1.push(spliced[0]);
+  }
+  return arr1;
+};
+// console.log(reverseArray(["A", "B", "C"]));
+// → ["C", "B", "A"];
+let arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// → [5, 4, 3, 2, 1]
+
