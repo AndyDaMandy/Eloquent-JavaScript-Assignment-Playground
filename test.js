@@ -94,4 +94,30 @@ function countBs(n, x) {
 
 console.log(countBs("Beep boop bop", "b"));
 
+// Range Exercise + bonus
+function range (x, y, step) {
+    var rng = [];
+    if (step !== undefined){
+        for (var c = x; c <= y; c += step){
+            rng.push(c);
+        };
+    }
+    else {
+    for (var i = x; i <= y; i++){
+        rng.push(i);
+    };
+    };
+    function add(z){
+    total = 0;
+      for (var b = z[0]; b <= z.length; b++){
+          total += b;
+      };
+      return total;  
+    };
+  //uncomment below to have the array added up. I could probably make a toggle of some sort, but I don't see a reason to.
+  //  return add(rng);
+  return rng;
+}
+
+console.log(range(1, 10, 2));
 
